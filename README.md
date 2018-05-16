@@ -2,7 +2,7 @@
 
 ### 1. Update your Raspberry Pi
 
-Open a terminal and insert these lines : 
+Open a terminal and insert those lines : 
 
 ```
 sudo apt-get update 
@@ -30,8 +30,6 @@ git clone git://git.drogon.net/wiringPi
 cd wiringPi
 sudo git pull origin
 ./build
-cd 
-sudo rm -rf wiringPi
 ```
 
 Now we can remove the wiringPi folder 
@@ -165,10 +163,12 @@ Now you will see the two buttons.
 
 ### 7. Connecte a LED
 
-To see when the streem is on you can connect to the pin 7 (GPIO 4) a LED. Don't forget to put a resistor of 330 ohms.
+To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't forget to put a resistor of 330 ohms. 
 
 ### 8. Interconnection between the server and the stream 
 
 We will modifie the stream2youtube.sh from https://github.com/florianprs/Stream_RPI_Youtube.git.
+
+
 
 
