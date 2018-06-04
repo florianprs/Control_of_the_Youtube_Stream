@@ -1,0 +1,27 @@
+html, body
+{
+    margin: 0;
+}
+
+.button 
+{
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 10em;
+    padding: 25px 25px;
+    cursor: pointer;
+    width: 100%;
+    height: 50vh;
+}
+
+#ON
+{
+    background-color: green;
+}
+
+#OFF
+{
+    background-color: red;
+    
+}

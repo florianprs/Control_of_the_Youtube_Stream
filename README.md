@@ -1,5 +1,21 @@
 # Control_of_the_Youtube_Stream
 
+The goal of this project is to remote activate a Youtube Stream from a Raspberry Pi 2 or 3. You can use a smartphone or a computer for example.
+
+
+## What you will need 
+
+You will need the following: 
+
+- Raspberry pi 2 or 3 with the lastest version of Raspbian
+- an USB camera
+- an internet connection
+- an YouTube account
+- breadboard
+- 2 cables Raspberry (cable male to female)
+- LED
+- 330 ohm resistor
+
 ### 1. Update your Raspberry Pi
 
 Open a terminal and insert those lines : 
@@ -12,11 +28,15 @@ sudo apt-get update
 
 ### 2. Install Apache
 
+Apache is use tu create a server on the Raspberry Pi
+
 ```
 sudo apt install apache2
 ```
 
 ### 3. Install PHP
+
+
 
 ```
 sudo apt install php php-mbstring
@@ -24,28 +44,42 @@ sudo apt install php php-mbstring
 
 ### 4. Install WiringPi
 
-```
+WiringPi it's a way to control the GPIO port of the Raspberry.
+
+First we need to install git
+
+``` 
 sudo apt-get install git-core
+```
+
+After we copy the WiringPi library 
+
+```
 git clone git://git.drogon.net/wiringPi
+```
+
+Now we can install it
+
+```
 cd wiringPi
 sudo git pull origin
 ./build
 ```
 
-Now we can remove the wiringPi folder 
+We can finaly remove the wiringPi folder 
 ```
 cd 
 sudi rm -rf wiringPi
 ```
 
-We can test WiringPi
+To test WiringPi you can use those lines
 
 ```
  gpio -v
  gpio readall
 ```
 
-### 5. Server
+### 5. ServerN
 
 Go to the folder of the Apache server
 
