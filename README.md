@@ -203,6 +203,6 @@ To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't
 
 We will modifie the stream2youtube.sh from https://github.com/florianprs/Stream_RPI_Youtube.git.
 
+### 9. Run the code
 
-
-
+Then, copy Control_stream2Youtube.sh from the git to your Raspberry Pi. 
