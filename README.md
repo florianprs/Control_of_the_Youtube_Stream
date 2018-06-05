@@ -209,4 +209,10 @@ To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't
 
 ### 8. Run the code
 
-Then, copy Control_stream2Youtube.sh from the git to your Raspberry Pi. You can add this file to the folder /home/pi. 
+Then, copy Control_stream2Youtube.sh from this git to your Raspberry Pi. You can add this file to the folder /home/pi. 
+Open a terminal in this folder and run this script : 
+
+```
+bash Control_stream2Youtube.sh
+
+```
