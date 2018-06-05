@@ -11,10 +11,10 @@ You will need the following:
 - an USB camera
 - an internet connection
 - an YouTube account
-- breadboard
-- 2 cables Raspberry (cable male to female)
-- LED
-- 330 ohm resistor
+- a breadboard
+- 2 jumper wires male to female 
+- a LED
+- a 330 ohm resistor
 
 ### 1. Update your Raspberry Pi
 
