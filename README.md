@@ -1,11 +1,11 @@
 # Control_of_the_Youtube_Stream
 
-The goal of this project is to remote activate a Youtube Stream from a Raspberry Pi 2 or 3. You can use your smartphone or your computer as a controller for example. This video shows the final version of this tutorial : https://youtu.be/l9Hk3dre_84  
+The purpose of this project is to remote activate a Youtube Stream from a Raspberry Pi 2 or 3. You can use your computer, for example, or even your smartphone. This video shows the final version of this tutorial : https://youtu.be/l9Hk3dre_84  
 
 
-## What you will need 
+## What will you need 
 
-You will need the following: 
+You will need these followings: 
 
 - Raspberry pi 2 or 3 with the lastest version of Raspbian
 - an USB camera
@@ -193,7 +193,7 @@ sudo nano script.php
 ### 6. Acces to the server
 
 Find the IP address of your Raspberry Pi.
-To find it, you can use ifconfig command in a terminal.
+To find it, use ifconfig command in a terminal.
 
 ```
 ifconfig
@@ -201,15 +201,14 @@ ifconfig
 
 Open a web browser and insert this IP adress.
 
-Now you will see the two buttons. ON in green en OFF in red. The first is used to start the stream and the second one allows to stop the live video.   
-
+Now you will see the two buttons. The green ON button(start the stream) and the red OFF button (stop live video). 
 ### 7. Connecte a LED
 
-To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't forget to put a 330 ohms resistor. 
+Check if the stream is on, then you can connect a LED to the pin 7 (GPIO 4). Don't forget to put a 330 ohms resistor. 
 
 ### 8. Run the code
 
-Then, copy the file "Control_stream2Youtube.sh" from this git to your Raspberry Pi. You can paste this file to the folder /home/pi. 
+Finally, copy the file "Control_stream2Youtube.sh" from this git to your Raspberry Pi. You can paste this file to the folder /home/pi. 
 Open a terminal in this folder and run this script : 
 
 ```
