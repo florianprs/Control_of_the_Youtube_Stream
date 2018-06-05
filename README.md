@@ -78,7 +78,8 @@ To test WiringPi you can use those lines
  gpio -v
  gpio readall
 ```
-$$$$$$$$$$$$Qu'est ce qu'on doit voire ici pour que ça fonctionne ? 
+
+Normaly you will see somthing like that picture https://i.stack.imgur.com/v7Dam.png 
 
 ### 5. ServerN
 
@@ -164,9 +165,11 @@ html, body
 ```
 
 
-Make a script.php file for the interrasction with the buttons
+Make a script.php file for the interraction with the buttons
 
-$$$$$$$Il manque comment faire le file ?
+```
+sudo nano script.php
+```
 
 ```
 <?php
