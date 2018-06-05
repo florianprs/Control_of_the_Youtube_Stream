@@ -207,12 +207,6 @@ Now you will see the two buttons. ON in green en OFF in red. The first is used t
 
 To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't forget to put a resistor of 330 ohms. 
 
-### 8. Interconnection between the server and the stream 
+### 8. Run the code
 
-We will modifie the stream2youtube.sh from https://github.com/florianprs/Stream_RPI_Youtube.git.
-
-### 9. Run the code
-
-Then, copy Control_stream2Youtube.sh from the git to your Raspberry Pi. 
-
-$$$$ et ou ? on doit le mettre ou ce code ? 
+Then, copy Control_stream2Youtube.sh from the git to your Raspberry Pi. You can add this file to the folder /home/pi. 
