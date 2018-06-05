@@ -1,6 +1,6 @@
 # Control_of_the_Youtube_Stream
 
-The goal of this project is to remote activate a Youtube Stream from a Raspberry Pi 2 or 3. You can use a smartphone or a computer for example.
+The goal of this project is to remote activate a Youtube Stream from a Raspberry Pi 2 or 3. You can use your smartphone or your computer as a controller for example. This video shows the final version of this tutorial : https://youtu.be/l9Hk3dre_84  
 
 
 ## What you will need 
@@ -28,7 +28,7 @@ sudo apt-get update
 
 ### 2. Install Apache
 
-Apache is used to create a server on the Raspberry Pi. Used this line in a terminal to install Apache : 
+Apache is used to create a server on the Raspberry Pi. Use this line in a terminal to install Apache : 
 
 ```
 sudo apt install apache2
@@ -36,7 +36,7 @@ sudo apt install apache2
 
 ### 3. Install PHP
 
-Same things that Apache install : 
+Same things that the Apache installation : 
 
 ```
 sudo apt install php php-mbstring
@@ -44,7 +44,7 @@ sudo apt install php php-mbstring
 
 ### 4. Install WiringPi
 
-WiringPi it's a way to control the GPIO port of the Raspberry.
+WiringPi is a library to control the GPIO port of the Raspberry.
 
 First we need to install git
 
@@ -66,7 +66,7 @@ sudo git pull origin
 ./build
 ```
 
-We can finaly remove the wiringPi folder 
+We can finaly remove the WiringPi folder 
 ```
 cd 
 sudi rm -rf wiringPi
@@ -79,11 +79,11 @@ To test WiringPi you can use those lines
  gpio readall
 ```
 
-Normaly you will see somthing like that picture https://i.stack.imgur.com/v7Dam.png 
+Normaly, you will see something like this picture https://i.stack.imgur.com/v7Dam.png 
 
 ### 5. ServerN
 
-Go to the folder of the Apache server
+Go to the Apache server folder
 
 ```
 cd /var/www/html
@@ -192,7 +192,7 @@ sudo nano script.php
 
 ### 6. Acces to the server
 
-Find the ipaddress of your Raspberry Pi.
+Find the IP address of your Raspberry Pi.
 To find it, you can use ifconfig command in a terminal.
 
 ```
@@ -205,11 +205,11 @@ Now you will see the two buttons. ON in green en OFF in red. The first is used t
 
 ### 7. Connecte a LED
 
-To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't forget to put a resistor of 330 ohms. 
+To see when the stream is on, you can connect a LED to the pin 7 (GPIO 4). Don't forget to put a 330 ohms resistor. 
 
 ### 8. Run the code
 
-Then, copy Control_stream2Youtube.sh from this git to your Raspberry Pi. You can add this file to the folder /home/pi. 
+Then, copy the file "Control_stream2Youtube.sh" from this git to your Raspberry Pi. You can paste this file to the folder /home/pi. 
 Open a terminal in this folder and run this script : 
 
 ```
