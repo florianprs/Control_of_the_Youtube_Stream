@@ -28,7 +28,7 @@ sudo apt-get update
 
 ### 2. Install Apache
 
-Apache is use tu create a server on the Raspberry Pi
+Apache is used to create a server on the Raspberry Pi. Used this line in a terminal to install Apache : 
 
 ```
 sudo apt install apache2
@@ -36,7 +36,7 @@ sudo apt install apache2
 
 ### 3. Install PHP
 
-
+Same things that Apache install : 
 
 ```
 sudo apt install php php-mbstring
@@ -78,6 +78,7 @@ To test WiringPi you can use those lines
  gpio -v
  gpio readall
 ```
+$$$$$$$$$$$$Qu'est ce qu'on doit voire ici pour que ça fonctionne ? 
 
 ### 5. ServerN
 
@@ -124,13 +125,13 @@ Put those lines inside
 </html>
 ```
 
-Make a stylesheet.css file for the graphical part
+After that, make a stylesheet.css file for the graphical part
 
 ```
 sudo nano stylesheet.css
 ```
 
-Put those lines inside
+Put those lines inside this .css file
 
 ```
 html, body
@@ -165,6 +166,8 @@ html, body
 
 Make a script.php file for the interrasction with the buttons
 
+$$$$$$$Il manque comment faire le file ?
+
 ```
 <?php
 
@@ -186,14 +189,16 @@ Make a script.php file for the interrasction with the buttons
 
 ### 6. Acces to the server
 
-Open your web browser and go to the ipaddress of your Raspberry Pi.
-To found it you can use ifconfig command.
+Find the ipaddress of your Raspberry Pi.
+To find it, you can use ifconfig command in a terminal.
 
 ```
 ifconfig
 ```
 
-Now you will see the two buttons. 
+Open a web browser and insert this IP adress.
+
+Now you will see the two buttons. ON in green en OFF in red. The first is used to start the stream and the second one allows to stop the live video.   
 
 ### 7. Connecte a LED
 
@@ -206,3 +211,5 @@ We will modifie the stream2youtube.sh from https://github.com/florianprs/Stream_
 ### 9. Run the code
 
 Then, copy Control_stream2Youtube.sh from the git to your Raspberry Pi. 
+
+$$$$ et ou ? on doit le mettre ou ce code ? 
